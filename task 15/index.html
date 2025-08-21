@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>form input tag</title>
+    <style>
+
+    </style>
+</head>
+
+<body>
+    <form action="">
+        <label for="fname"> First Name</label>
+        <input type="text" name="fname" id="fname"><br><br>
+
+        <label for="middlename"> Middle Name</label>
+        <input type="text" name="middlename" id="middlename"><br><br>
+
+        <label for="lastname"> Last Name</label>
+        <input type="text" name="lastname" id="lastname"><br><br>
+
+        <label for="email">Email</label>
+        <input type="email" name="email" id="email"><br><br>
+
+        <label for="phone">Enter your phone number in the format</label>
+        <input type="tel" name="phone" id="phone" pattern="[0-9]{3}-[0-9]{3}-[0-9]{4}"><br><br>
+
+        <label for="age">Age</label>
+        <input type="range" name="age" id="age"><br><br>
+
+        <!-- gender  -->
+        <label>Gender:</label>
+        <input type="radio" name="gender" id="male" value="Male">
+        <label for="male"> Male</label>
+        <input type="radio" name="gender" id="female" value="Female">
+        <label for="female"> Female</label><br><br>
+       
+        <!-- checkbox -->
+        <label >Hobby:</label>
+        <input type="checkbox" name="hobby" id="cricket" value="cricket">
+        <label for="cricket">cricket</label>
+        <input type="checkbox" name="hobby" id="chess" value="football">
+        <label for="chess">Chess</label>
+        <input type="checkbox" name="hobby" id="football" value="football">
+        <label for="football">football</label>
+        <input type="checkbox" name="hobby" id="vollyball" value="football">
+        <label for="vollyball">Vollyball</label><br><br>
+
+        <!--  selectbox -->
+        <label for="option">Selectbox</label>
+        <select id="option" name="option">
+
+            <option value="option1">option 1</option>
+            <option value="option2">option 2</option>
+            <option value="option3">option3</option>
+        </select>
+        <br><br>
+       
+
+    </form>
+</body>
+
+</html>
