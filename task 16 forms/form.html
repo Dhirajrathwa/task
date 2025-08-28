@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Registration form</title>
+    <script src="https://kit.fontawesome.com/0842d2c5a0.js" crossorigin="anonymous"></script>
+    <style>
+        body{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+        .card {
+            width: 440px;
+            height: 660px;
+            margin: auto;
+            border: 2px solid gray;
+            padding: 20px;
+        }
+
+        .card h1 {
+            text-align: center;
+            margin: 30px;
+        }
+
+        .row {
+            display: flex;
+            margin-bottom: 20px;
+        }
+
+        .row input,.row select {
+            width: 100%;
+            height: 20px;
+        }
+
+        .row input:focus,
+        .row select:focus {
+            border-color: #f0b400;
+        }
+
+        .icons {
+            width: 4%;
+            border: 1px solid grey;
+            padding: 3px;
+        }
+
+        .user {
+            display: flex;
+            margin-right: 10px;
+        }
+
+        .gender {
+            margin: 20px 0px;
+        }
+        .user input{
+            width: 100%;
+            
+        }
+        .checkbox-group {
+            margin: 10px 0px 10px 0px;
+        }
+
+        .checkbox-group label {
+            display: block;
+            margin-bottom: 10px;
+        }
+
+        button {
+            width: 100%;
+            height: auto;
+            background-color: rgb(219, 216, 5);
+            font-size: 14px;
+            color: white;
+            border-radius: 4px;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="card">
+        <h1> Responsive Registration form</h1>
+        <form action="">
+            <label for="email">Email</label>
+            <div class="row">
+                <div class="icons"><i class="fa-solid fa-envelope"></i></div>
+                <input type="text" name="email" id="email" placeholder=" enter your email">
+            </div>
+
+            <label for="password">Password</label>
+            <div class="row">
+                <div class="icons"> <i class="fa-solid fa-lock"></i></div>
+                <input type="password" name="password" id="password" placeholder=" enter password">
+            </div>
+
+            <label for="confirmpassword"> Confirm Password</label>
+            <div class="row">
+                <div class="icons"><i class="fa-solid fa-lock"></i></div>
+                <input type="password" name="confirmpassword" id="confirmpassword" placeholder=" confirm password">
+            </div><br>
+
+
+            <div class="user">
+                <div class="icons"><i class="fa-solid fa-user"></i></div>
+                <input type="text" name="fname" id="fname" placeholder="First name">
+
+                <div class="icons"><i class="fa-solid fa-user"></i></div>
+                <input type="text" name="lname" id="lname" placeholder="last name">
+            </div>
+
+            <div class="gender">
+                <label><input type="radio" name="gender" value="male">Male</label>
+                <label><input type="radio" name="gender" value="female">Female</label>
+            </div>
+
+            <div class="row">
+                <select required>
+                    <option value="">Select country</option>
+                    <option value="india">India</option>
+                    <option value="america">America</option>
+                    <option value="china">China</option>
+                    <option value="japan">Japan</option>
+                </select>
+            </div>
+
+            <div class="checkbox-group">
+                <label> <input type="checkbox"> I agree with terms and condition</label>
+                <label> <input type="checkbox"> I want to receive the newsletter</label>
+            </div>
+            <button type="submit">Register</button>
+    </div>
+
+    </form>
+
+
+    </div>
+
+</body>
+
+</html>
