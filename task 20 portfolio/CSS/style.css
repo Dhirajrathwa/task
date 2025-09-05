@@ -1,0 +1,124 @@
+        body {
+            background-color: #000;
+        }
+
+        .container-md {
+            background-color: rgb(75, 74, 74);
+        }
+
+        .bg-black {
+            background-color: #000 !important;
+        }
+
+        .navbar-nav .nav-link {
+            color: #b1afaf !important;
+            /* Changed to black */
+            font-size: 0.9rem;
+            transition: 0.3se;
+
+        }
+
+        .navbar a {
+            position: relative;
+        }
+
+        .navbar a::after {
+            content: "";
+            position: absolute;
+            left: 0;
+            bottom: 0;
+            width: 0%;
+            height: 2px;
+            background-color: aqua;
+            transition: width 0.3s ease;
+        }
+
+        .navbar a:hover::after {
+            width: 100%;
+        }
+
+        .navbar-nav .nav-link a:hover,
+        .navbar-nav .nav-link:focus {
+            width: 100%;
+            color: #07c5ff !important;
+     
+        }
+        .navbar-nav .nav-item i{
+            color: #b1afaf !important;
+            margin-left: 10px;
+            align-items: center;
+            display:block ;
+        }
+                  /*   banner style */
+        .banner {
+            width: 80%;
+            height: 400px;
+            margin: auto;
+            padding: 100px;
+            display: flex;
+            gap: 60px;
+            justify-content: space-around;
+        }
+
+        .banner .info {
+            width: 50%;
+            height: 300px;
+            color: white;
+        }
+
+        .info p {
+            font-size: small;
+            color: #b1afaf;
+        }
+          .banner .info button {
+            width: 200px;
+            height: 30px;
+            background-color: rgb(6, 251, 6);
+            align-items: center;
+        }
+
+        .info button:hover
+        {
+            box-shadow: 0px 0px 10px grey;
+        }
+        .profile-image {
+            width: 50%;
+            height: 300px;
+            /*   display: flex;
+            justify-content: center; */
+        }
+
+        .profile-image img {
+            width: 100%;
+            height: auto;
+            border-radius: 50%;
+
+        }
+         .profile-image img:hover,.content:hover{
+            box-shadow: 0px 0px 20px greenyellow;
+         }
+       
+
+.workcards-heading{
+    margin-left: 50px;
+}
+        /*  cards */
+      
+        .workcards {
+            width: 80%;
+            margin: auto;
+            display: flex;
+            justify-content: space-around;
+        }
+
+        .workcards .content {
+            border: 2px solid grey;
+            border-radius: 4px;
+            padding: 4px 10px;
+        }
+
+        .content h4 {
+            margin-top: 0;
+            margin-bottom: 0;
+            align-content: center;
+        }
